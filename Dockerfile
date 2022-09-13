@@ -61,3 +61,5 @@ RUN python init.py
 COPY local.yml .
 
 RUN conda env update --name base -f local.yml
+
+ENTRYPOINT [ "jupyter", "notebook" ]
