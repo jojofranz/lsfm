@@ -62,4 +62,6 @@ COPY local.yml .
 
 RUN conda env update --name base -f local.yml
 
-ENTRYPOINT [ "jupyter", "notebook" ]
+RUN pip install notebook jupyterlab
+
+ENTRYPOINT [ "jupyter", "lab" ]
