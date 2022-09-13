@@ -19,6 +19,7 @@ RUN apt-get update -y && \
 
 ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
+# PATH="/home/ubuntu/miniconda3/bin:${PATH}"
 
 RUN wget \
     https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-x86_64.sh \
